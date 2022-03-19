@@ -39,7 +39,7 @@ nav {
 
 .link::before{
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #0f89a4, #10cd51);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -90,7 +90,7 @@ nav {
 }
 
 .banner h1 {
-    background: linear-gradient(#092db0, #7a00ff);
+    background: linear-gradient(#0f89a4, #10cd51);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -131,7 +131,7 @@ nav {
     position: absolute;
     top: -2;
     left: -2;
-    background: linear-gradient(#6c15d6, #092db0);
+    background: linear-gradient(#0f89a4, #10cd51);
     width: calc(100% + 2px);
     height: calc(100% + 2px);
     z-index: -1;

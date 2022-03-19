@@ -61,7 +61,7 @@ nav {
     top: -2;
     left: -2;
     position: absolute;
-    background: linear-gradient(#6c15d6, #092db0);
+    background: linear-gradient(#0f89a4, #10cd51);
     width: calc(100% + 2px);
     height: calc(100% + 2px);
     z-index: -1;
@@ -82,12 +82,12 @@ nav {
     border-radius: 4px;
     padding: 10px;
     outline: none;
-    box-shadow: 0 0 3pt 1pt #092db0;
+    box-shadow: 0 0 3pt 1pt #0f89a4;
     min-width: 100px;
 }
 
 .login-field:focus {
-    box-shadow: 0 0 3pt 1pt #7a00ff;
+    box-shadow: 0 0 3pt 1pt #0f89a4;
 }
 
 .button {
@@ -108,7 +108,7 @@ nav {
 
 .button::before{
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #0f89a4, #10cd51);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -142,7 +142,7 @@ nav {
 
 .link::before{
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #0f89a4, #10cd51);
     position: absolute;
     top: -2px;
     left: -2px;

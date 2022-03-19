@@ -32,7 +32,7 @@ nav {
 }
 
 .stat-bold {
-    background: linear-gradient(#092db0, #7a00ff);
+    background: linear-gradient(#0f89a4, #10cd51);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     padding-left: 5px;
@@ -45,7 +45,7 @@ nav {
 
 .link::before{
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #0f89a4, #10cd51);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -95,7 +95,7 @@ nav {
 }
 
 .banner h1 {
-    background: linear-gradient(#092db0, #7a00ff);
+    background: linear-gradient(#0f89a4, #10cd51);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
