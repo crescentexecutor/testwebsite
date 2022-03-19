@@ -99,7 +99,7 @@ nav {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    background: linear-gradient#0f89a4, #10cd51);
+    background: linear-gradient(#0f89a4, #10cd51);
     z-index: -1;
 }
 
