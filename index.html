@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="" xmlns="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hydra Client - Home</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://hydraclient.com",
+      "@type": "Organization",
+      "url": "https://hydraclient.com",
+      "logo": "https://hydraclient.com/resources/logo.png"
+    }
+  </script>
+  <meta name="description" content="Hydra Client is a free injectable minecraft cheat for the latest version of minecraft.">
+  <link rel="icon" href="resources/hydra64.png" type="image/png">
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <div class="box">
+      <div class="content">
+        <button class="link" onclick="window.location.href='info.html';">Info</button>
+        <button class="link" onclick="window.location.href='changelog.html';">Changelog</button>
+        <button class="link" onclick="window.location.href='donate.html';">Donate</button>
+        <button class="link" onclick="window.location.href='download.html';">Download</button>
+        <button class="link" onclick="window.open('https://discord.gg/85S834y5Es')">Discord</button>
+      </div>
+    </div>
+  
+  </nav>
+
+  <div class="banner">
+    <h1>Hydra Client</h1>
+    <p>Free, up to date cheats for the latest version of Minecraft.</p>
+
+    <div class="stats">
+      <h2 class="stat-bold" id="$downloads">1100</h2>
+      <p class="stat-text">downloads so far</p>
+<!--      <h2 class="stat-bold" id="$users">0</h2>-->
+<!--      <p class="stat-text"> users online</p>-->
+    </div>
+  </div>
+
+  <div class="showcase">
+      <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/aexwm7l95nU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</body>
+
+<footer>
+  <div class="footer">
+    <div class="footer-text">
+      <p>Copyright 2021 Hydra Software</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  const xmlHttp = new XMLHttpRequest();
+
+  xmlHttp.onreadystatechange = function() {
+    if (xmlHttp.readyState === XMLHttpRequest.DONE) {
+
+      // const data = xmlHttp.response;
+
+      // const split = data.split("#");
+      document.getElementById("$downloads").textContent = xmlHttp.response;
+      // document.getElementById("$users").textContent = split[1];
+    }
+  }
+
+  xmlHttp.open("GET", "https://hydraclient.com/stats", true); // false for synchronous request
+  xmlHttp.send();
+
+</script>
+
+</html>

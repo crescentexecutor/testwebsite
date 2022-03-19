@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hydra Client - Donate</title>
+    <meta name="description" content="Donate to Hydra Client">
+    <link rel="icon" href="resources/hydra64-3.png" type="image/png">
+    <link rel="stylesheet" href="css/donate.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="box">
+        <div class="content">
+            <button class="link" onclick="window.location.href='index.html';">Home</button>
+            <button class="link" onclick="window.location.href='info.html';">Info</button>
+            <button class="link" onclick="window.location.href='changelog.html';">Changelog</button>
+            <button class="link" onclick="window.location.href='download.html';">Download</button>
+            <button class="link" onclick="window.open('https://discord.gg/85S834y5Es')">Discord</button>
+        </div>
+    </div>
+</nav>
+
+<form action="https://hydraclient.com/donate" method="POST">
+    <div class="login-wrapper">
+        <div class="login">
+            <div class="login-form">
+                <div class="input">
+                    <p style="font-size: small">Buy a cape to support development</p>
+                    <div class="input">
+                        <label for="username"></label><input type="text" class="login-field" value="" placeholder="minecraft username" id="username" name="username" required="">
+                    </div>
+
+                    <div class="input">
+                        <label for="email"></label><input type="email" class="login-field" value="" placeholder="email" id="email" name="email" required="">
+                    </div>
+
+                    <div class="input">
+                        <button class="button" type="submit">Donate</button>
+                    </div>
+
+                    <div class="text">
+                        <p style="font-size: small">Capes are UUID bound and will persist through name changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

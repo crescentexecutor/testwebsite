@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hydra Client - Info</title>
+    <link rel="icon" href="resources/hydra64-1.png" type="image/png">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <nav class="navbar">
+        <div class="box">
+            <div class="content">
+                <button class="link" onclick="window.location.href='index.html';">Home</button>
+                <button class="link" onclick="window.location.href='changelog.html';">Changelog</button>
+                <button class="link" onclick="window.location.href='donate.html';">Donate</button>
+                <button class="link" onclick="window.location.href='download.html';">Download</button>
+                <button class="link" onclick="window.open('https://discord.gg/85S834y5Es')">Discord</button>
+            </div>
+        </div>
+    </nav>
+
+</nav>
+
+<div class="banner">
+    <h1>Frequently asked questions</h1>
+</div>
+
+<div class="purchase">
+    <div class="glow">
+        <button class="accordion">How do I know the client is safe?</button>
+        <div class="panel">
+            <p>You can never truly know any software is safe until you read every line of its code, however, like other popular clients, the many people that have used Hydra can vouch for its safety.</p>
+        </div>
+
+        <button class="accordion">The client keeps crashing! What do I do!</button>
+        <div class="panel">
+            <p>Join our discord server for support with the link in the top bar.</p>
+        </div>
+
+        <button class="accordion">How do I open the menu?</button>
+        <div class="panel">
+            <p>Bind your clickgui with the -bind command in game, then press the key you assigned it. If this doesn't work, join our discord for support.</p>
+        </div>
+
+        <button class="accordion">How do I get a cape?</button>
+        <div class="panel">
+            <p>Donate at least $5 to get a cape (link in menu bar above)</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="footer-text">
+            <p>Copyright 2021 Hydra Software</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const acc = document.getElementsByClassName("accordion");
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</html>
