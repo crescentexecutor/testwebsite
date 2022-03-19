@@ -5,14 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Forkhook Client - Home</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://hydraclient.com",
-      "@type": "Organization",
-      "url": "https://hydraclient.com",
-      "logo": ""
-    }
-  </script>
   <meta name="description" content="Forkhook is hot">
   <link rel="stylesheet" href="css/homepage.css">
 </head>
@@ -26,7 +18,7 @@
         <button class="link" onclick="window.location.href='info.html';">Info</button>
         <button class="link" onclick="window.location.href='changelog.html';">Changelog</button>
         <button class="link" onclick="window.location.href='download.html';">Download</button>
-        <button class="link" onclick="window.open('https://discord.gg/85S834y5Es')">Discord</button>
+        <button class="link" onclick="window.open('https://discord.gg/qFNPtzKUP8')">Discord</button>
       </div>
     </div>
   
@@ -37,7 +29,6 @@
     <p>Free, bypassing most anticheats with no flags.</p>
 
     <div class="stats">
-      <h2 class="stat-bold" id="$downloads">1100</h2>
       <p class="stat-text">0 downloads so far</p>
 <!--      <h2 class="stat-bold" id="$users">0</h2>-->
 <!--      <p class="stat-text"> users online</p>-->
@@ -49,24 +40,5 @@
   </div>
 
 </body>
-<script>
-
-  const xmlHttp = new XMLHttpRequest();
-
-  xmlHttp.onreadystatechange = function() {
-    if (xmlHttp.readyState === XMLHttpRequest.DONE) {
-
-      // const data = xmlHttp.response;
-
-      // const split = data.split("#");
-      document.getElementById("$downloads").textContent = xmlHttp.response;
-      // document.getElementById("$users").textContent = split[1];
-    }
-  }
-
-  xmlHttp.open("GET", "https://hydraclient.com/stats", true); // false for synchronous request
-  xmlHttp.send();
-
-</script>
 
 </html>
